@@ -1,0 +1,11 @@
+Configuration side:
+
+First, look into the server's error log (it is different from PHP error log). For example, apache has its own log files, related to the startup of different modules/server messages and etc. PHP's error log is a separate log, so if there are no messages there - it doesn't mean anything.
+
+Second, look into php.ini and see your log settings - which level of errors are written.
+
+Program side:
+
+First, split your code, so that it processes a maximum of 50 records per run. Redo your scripts so that it runs and re-runs until executes all necessary actions.
+
+Second, look into time/memory limits - are they sufficient to execute your operations? Say, sending mail takes 1 second, if your time limit is 30 seconds - you can only send a maximum of 30 emails. It is related to the first part, since you want to partition your tasks into segments which can be safely executed within the provided limits.

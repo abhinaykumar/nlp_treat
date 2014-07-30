@@ -16,8 +16,10 @@ def process_collection(path)
   puts ""
 end
  
-process_collection './story'
-process_collection './story1'
-process_collection './story2'
+process_collection './Auth1'
+process_collection './Auth2'
+process_collection './Auth3'
+
+
 # process_collection 'collections/philip_k_dick'
 # process_collection 'collections/news'

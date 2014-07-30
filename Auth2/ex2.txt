@@ -1,0 +1,9 @@
+You'll have to excuse my lack of details in regards to this question as I am still trying to work out what's going on.
+
+I understand there may not be a straight answer to this but any help I can get will help me further debug the issue.
+
+My issue is that all of a sudden my PHP script will exit and display a white page. No PHP or MySQL errors on the page and none in the error logs.
+
+The issue occurs at very random times. When it does occur, it "appears" to be when there are a large number of MySQL queries are run at one time. When I say large, it might be a few hundred when sending out emails. Sometimes thousands, if a large import is occurring.
+
+The last time this issue happened was last night when a user tried to send out 118 SMS Messages. After each SMS was queue and also stored in the archive, there would have been roughly a couple hundred queries.

@@ -1,7 +1,3 @@
-At one end of that tomb, its curious roots displacing the time-stained blocks of Pentelic marble, grows an unnaturally large olive tree of oddly repellent shape.
-
-so like to some grotesque man, or death-distorted body of a man, that the country folk fear to pass it at night when the moon shines faintly through the crooked boughs.
-
 I tried to replicate the issue today when trying to send 125 and 250 SMS Messages on two different occasions. Both worked fine. I then tried sending 250 SMS Messages and 250 emails and also worked fine.
 
 I am using Amazon Elastic Beanstalk for my PHP pages and RDS for my MySQL database.

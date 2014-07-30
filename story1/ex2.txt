@@ -1,7 +1,0 @@
-Various metrics can be used in an attempt to fingerprint authors. We might use the average number of sentences per paragraph, for example.
-
-Unfortunately, with simple metrics, we run into the risk of confusing two authors who write in similar styles. Lovecraft was influenced by Nathaniel Hawthorne and Edgar Allan Poe, and some of his simple metrics show this. To prevent confusion of similar authors we need to compare the actual content of authors’ stories.
-
-A content metric that is easily available to us is word popularity. If a story’s top 100 words are mostly within another story’s bottom 100 words, then those stories are probably not very similar.
-
-Treat provides Countable#frequency_of which returns the number of times a word occurs. If we create a hash where every key is a word and every value is the number of times that word appears, we can sort it to get the word popularity.

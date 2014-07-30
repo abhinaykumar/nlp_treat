@@ -10,7 +10,7 @@ require 'treat'
 include Treat::Core::DSL
 
 # Parse More Than One Story – Collections
-stories = collection'./story'
+stories = collection'./Auth1'
 # Process the entire collection
 stories.apply(:chunk, :segment, :tokenize, :category)
  
