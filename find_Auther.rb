@@ -74,18 +74,20 @@ puts "Wait looking for its Auther................"
 
 # COUNT MATCH
 matchAuth1 = (findAuth_adjective_popularity & Auth1_adjective_popularity )
-match_count_Auth1 = matchAuth1.length
+
+matchAuth1_adjective_percentage = (matchAuth1.length / findAuth.adjective_count.to_f).round(2)
 
 matchAuth2 = (findAuth_adjective_popularity & Auth2_adjective_popularity )
-match_count_Auth2 = matchAuth2.length
+
+matchAuth2_adjective_percentage = (matchAuth2.length / findAuth.adjective_count.to_f).round(4)
 
 # matchAuth1.adjective_count.to_f.round(2)
 puts "....................................."
-puts "#{match_count_Auth1}% match for Auth1"
-puts "#{match_count_Auth2}% match for Auth2"
+puts "#{matchAuth1_adjective_percentage * 100}% match for Auth1"
+puts "#{matchAuth2_adjective_percentage * 100}% match for Auth2"
 
-if match_count_Auth1 > match_count_Auth2
-  puts "Probably Auther1 is the writter for this story with #{match_count_Auth1}% match."
+if matchAuth1_adjective_percentage > matchAuth2_adjective_percentage
+  puts "Probably Auther1 is the writter for this story with #{matchAuth1_adjective_percentage * 100}% match."
 else
-  puts "Probably Auther2 is the writter for this story with #{match_count_Auth2}% match."
+  puts "Probably Auther2 is the writter for this story with #{matchAuth2_adjective_percentage * 100}% match."
 end
